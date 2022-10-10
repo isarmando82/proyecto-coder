@@ -125,16 +125,23 @@ h2 {
 .cardx3 {
   display: flex;
   flex-wrap: wrap;
+
 }
 .card {
-  padding: 100px;
+  height: 350px;
+  padding: 50px;
+  padding-left: 75px;
   border: 2px;
-  margin: 50px 
+  margin: 100px;
+  background-color: darkgray; 
+  
 }
 
 .cardImagen {
+  position: relative;
   padding: 7px;
-  border: 3px; 
+  border: 3px;
+  border-radius: 75%; 
 }
 .cardTexto {
   padding: 5px;
@@ -150,6 +157,9 @@ h2 {
 }
 .cardButton {
   padding-left: 110px;
+}
+.cardButton img {
+  border-radius: 40%;
 }
 footer {
   grid-area: footer;
