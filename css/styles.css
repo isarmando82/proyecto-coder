@@ -53,6 +53,10 @@ nav ul {
   list-style: none;
   justify-content: center
 }
+nav ul li a:hover{
+  color: blue
+}
+
 h1 {
   background-color: lightgrey;
   padding: 20px;
@@ -107,6 +111,11 @@ h2 {
   align-self: center;
 }
 
+.noticiaTitle::before {
+  content: "ULTIMO MOMENTO: ";
+  color: blue
+}
+
 .noticiaTitle2 {
   grid-area: noticiaTitle;
   font-size: 22px;
@@ -122,10 +131,9 @@ h2 {
   text-indent: 41px;
   ;
 }
-.cardx3 {
+.cardx {
   display: flex;
   flex-wrap: wrap;
-
 }
 .card {
   height: 350px;
@@ -201,22 +209,46 @@ footer .social {
 .form {
   font-family: 'Inter Tight', sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bold;  
+
+  
 }
 .marco1 {
   padding: 40px;
   margin: 25px;
 }
+
+input:focus { 
+  
+  background-color: rgb(223, 149, 149);}
+
 .marco2 {
   padding: 40px;
   margin: 25px;
 }
+
+.marco2 input::placeholder {
+  color:rgba(7, 217, 42, 0.876);
+  font-size: 16px;
+  
+  
+}
+
 .terminosTexto {
   font-size: 24px;  
   padding: 60px;
   margin: 25px;
+  text-indent: 50px;
 }
+
+.terminosTexto p:first-child::first-letter {
+  color: rgb(48, 105, 23);
+  font-size: 50px;
+  
+}
+
 .terminos {
   padding: 40px;
   margin: 40px;
 }
+
