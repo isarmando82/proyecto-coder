@@ -89,20 +89,13 @@ h2 {
   padding: 30px;
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr;
+  grid-template-rows: 2fr;
   grid-template-areas: 
   "imagen noticiaTitle"
-  "textoNoticia textoNoticia";  
+  "textoNoticia textoNoticia"
+  ;  
 }
-.Noticia2 {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 15% 85%;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-  "imagen noticiaTitle"
-  "textoNoticia textoNoticia"; 
-}
+
 .imagenNoticia {
   padding: 20px;
   grid-area: imagen;
@@ -390,9 +383,8 @@ input:focus {
     min-height: 110px;
     background-color: bisque;
     font-family: 'Inter Tight', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    
+    font-weight: lighter;
+    font-size: 14px;  
   }
   .logo {
     grid-area: imagen;
@@ -428,6 +420,18 @@ input:focus {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr; 
   }
+
+  .Noticia {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+    "imagen noticiaTitle"
+    "textoNoticia textoNoticia"
+    "textoNoticia2 textoNoticia2"
+    }
+
   .imagenNoticia {
     height: 200px;
     width: 200px;
@@ -435,6 +439,15 @@ input:focus {
   .noticiaTitle {
     padding-right: 40px;
   }
+  .textoNoticia2 {
+  grid-area: textoNoticia2;
+  padding: 5px;
+  font-size: 22px;
+  text-indent: 41px;
+  line-height: normal;
+
+}
+
   .cardx {
     justify-content:space-around;}
   .card {
