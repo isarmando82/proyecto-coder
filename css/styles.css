@@ -486,14 +486,14 @@ input:focus {
   @media (max-width: 768px) {
 
     .containerGrid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
       grid-template-rows: 0.1fr 1fr 1fr 1fr 0.10fr;
       grid-template-areas: 
-      "header header header"
-      "main main main"
-      "main main main"
-      "main main main"
-      "footer footer footer";
+      "header"
+      "main"
+      "main"
+      "main"
+      "footer";
     }
     
     header {
@@ -525,7 +525,8 @@ input:focus {
       flex-direction: row;
       justify-content: space-between;
       padding: 10px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 26px;
     
     }
     h1 {
@@ -606,7 +607,124 @@ input:focus {
 
 @media (576px) {
 
+  .containerGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.10fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+  }
   
+  header {
+    grid-area: header;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.25fr 0.25fr;
+    grid-template-areas: 
+    "imagen"
+    "navi";
+    min-height: 110px;
+    background-color: bisque;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    
+  }
+  .logo {
+    grid-area: imagen;
+    padding: 175px;
+    height: 150;
+    
+  }
+  .navi{
+    grid-area: navi;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+  
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 { 
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      padding: 10px;
+      font-weight: bolder;
+      border: 4px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 110px;
+      background-color:  #eae5ee; 
+  } 
+  
+  .doble {
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr; 
+  }
+  .imagenNoticia {
+    height: 200px;
+    width: 200px;
+  }
+  .noticiaTitle {
+    padding-right: 40px;
+  }
+  .cardx {
+    justify-content:space-around;}
+  .card {
+    height: 300px;
+    padding: 50px;
+    padding-left: 75px;
+    border: 2px;
+    margin: 50px;
+  }
+  .cardImagen {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    padding: 7px;
+    border: 3px;
+    border-radius: 75%; 
+  }
+  .cardTexto {
+    padding: 5px;
+    border: 1px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  .cardPrecio {
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 8px;  
+  }
+  .cardButton {
+    padding-left: 100px;
+  }
+  footer {
+    background-image: url(../assets/imgs/bottom3.png);
+  } 
+  footer section ul {
+  font-size: 14px;
+  } 
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start  ;
+    justify-content: flex-start ;
+    gap: 50px;
+    margin-left: 35px;
+    padding: 36px;
+  }
   
 }
 
