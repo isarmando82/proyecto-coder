@@ -216,7 +216,7 @@ footer .social {
 
 .form {
   font-family: 'Inter Tight', sans-serif;
-  font-size: 20px;;    
+  font-size: 20px;   
 }
 .marco1 {
   padding: 40px;
@@ -374,13 +374,9 @@ input:focus {
   header {
     grid-area: header;
     height: 200px;
-  
+
   }   
-  .logo{
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-  }
+ 
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -420,9 +416,6 @@ input:focus {
     "textoNoticia2 textoNoticia2"
     }
 
-  .imagen {
-
-  }
   .noticiaTitle {
     padding-right: 50px;
   }
@@ -488,7 +481,7 @@ input:focus {
 
   .containerGrid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.27fr 1fr 1fr 1fr 0.10fr;
+    grid-template-rows: 0.27fr 0.90fr 1fr 1fr 0.10fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -500,9 +493,13 @@ input:focus {
   header {
     grid-area: header;
     height: 230px;
-    font-size: 16px;
+    font-size: 16px;}
   
-  }
+  .nav{
+    font-size: 14px;
+    font-weight: bold;
+  }  
+
   h1 {
     font-size: 18px;
   }
@@ -563,7 +560,7 @@ input:focus {
     padding-left: 100px;
   }
   footer {
-    background-image: url(../assets/imgs/bottom3.png);
+    background-image: url(../assets/imgs/bottom2.png);
   } 
   footer section ul {
   font-size: 14px;
