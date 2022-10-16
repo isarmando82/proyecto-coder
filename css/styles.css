@@ -256,7 +256,7 @@ input:focus {
 
 .slide-in-elliptic-top-fwd {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
@@ -292,7 +292,7 @@ input:focus {
 }
 .slide-in-top {
 	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @-webkit-keyframes slide-in-top {
   0% {
@@ -320,7 +320,7 @@ input:focus {
 }
 .contact {
 	-webkit-animation: contact 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: contact 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: contact 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 @-webkit-keyframes contact {
   0% {
@@ -356,13 +356,13 @@ input:focus {
 }
 .flip-in-hor-bottom {
 	-webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @media (max-width: 768px) {
 
   .containerGrid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.10fr;
+    grid-template-rows: 0.15fr 1fr 1fr 0.10fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -373,33 +373,21 @@ input:focus {
   
   header {
     grid-area: header;
-    font-family: sans-serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas: 
-    "imagen"
-    "navi";
-    min-height: 110px;
-    background-color: bisque;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: lighter;
-    font-size: 14px;  
-  }
-  .logo {
-    grid-area: imagen;
-    padding: 175px;
-    height: 150;
-    
-  }
-  .navi{
-    grid-area: navi;
+    height: 200px;
+  
+  }   
+  .logo{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 10px;
-  
+    justify-self: center;
   }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+  }  
+    
   h1 {
     font-size: 18px;
   }
@@ -422,7 +410,7 @@ input:focus {
   }
 
   .Noticia {
-    padding: 30px;
+    padding: 1px;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 4fr;
@@ -432,12 +420,11 @@ input:focus {
     "textoNoticia2 textoNoticia2"
     }
 
-  .imagenNoticia {
-    height: 200px;
-    width: 200px;
+  .imagen {
+
   }
   .noticiaTitle {
-    padding-right: 40px;
+    padding-right: 50px;
   }
   .textoNoticia2 {
   grid-area: textoNoticia2;
@@ -496,133 +483,12 @@ input:focus {
     padding: 36px;
   }
   }
-  @media (max-width: 768px) {
 
-    .containerGrid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.1fr 1fr 1fr 1fr 0.10fr;
-      grid-template-areas: 
-      "header"
-      "main"
-      "main"
-      "main"
-      "footer";
-    }
-    
-    header {
-      grid-area: header;
-      font-family: sans-serif;
-      display: grid;
-      grid-template-columns: 0.5fr;
-      grid-template-rows: 0.25fr 0.25fr;
-      grid-template-areas: 
-      "imagen"
-      "navi";
-      min-height: 110px;
-      background-color: bisque;
-      font-family: 'Inter Tight', sans-serif;
-      font-weight: bold;
-      font-size: 14px;
-      
-    }
-    .logo {
-      grid-area: imagen;
-      padding: 175px;
-      height: 150;
-      
-    }
-    .navi{
-      grid-area: navi;
-      padding-bottom: 100px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 10px;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 26px;
-    
-    }
-    h1 {
-      font-size: 18px;
-    }
-    h2 { 
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        padding: 10px;
-        font-weight: bolder;
-        border: 4px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 110px;
-        background-color:  #eae5ee; 
-    } 
-    
-    .doble {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr; 
-    }
-    .imagenNoticia {
-      height: 200px;
-      width: 200px;
-    }
-    .noticiaTitle {
-      padding-right: 40px;
-    }
-    .cardx {
-      justify-content:space-around;}
-    .card {
-      height: 300px;
-      padding: 50px;
-      padding-left: 75px;
-      border: 2px;
-      margin: 50px;
-    }
-    .cardImagen {
-      height: 100px;
-      width: 100px;
-      position: relative;
-      padding: 7px;
-      border: 3px;
-      border-radius: 75%; 
-    }
-    .cardTexto {
-      padding: 5px;
-      border: 1px;
-      font-size: 16px;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bold;
-    }
-    .cardPrecio {
-      font-weight: bolder;
-      font-size: 16px;
-      padding: 8px;  
-    }
-    .cardButton {
-      padding-left: 100px;
-    }
-    footer {
-      background-image: url(../assets/imgs/bottom3.png);
-    } 
-    footer section ul {
-    font-size: 14px;
-    } 
-    footer .social {
-      display: flex;
-      flex-direction: row;
-      align-content: flex-start  ;
-      justify-content: flex-start ;
-      gap: 50px;
-      margin-left: 35px;
-      padding: 36px;
-    }
-    }
-
-@media (576px) {
+@media (max-width:576px) {
 
   .containerGrid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.10fr;
+    grid-template-rows: 0.27fr 1fr 1fr 1fr 0.10fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -633,35 +499,8 @@ input:focus {
   
   header {
     grid-area: header;
-    font-family: sans-serif;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-template-rows: 0.25fr 0.25fr;
-    grid-template-areas: 
-    "imagen"
-    "navi";
-    min-height: 110px;
-    background-color: bisque;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    
-  }
-  .logo {
-    grid-area: imagen;
-    padding: 175px;
-    height: 150;
-    
-  }
-  .navi{
-    grid-area: navi;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 26px;
+    height: 230px;
+    font-size: 16px;
   
   }
   h1 {
