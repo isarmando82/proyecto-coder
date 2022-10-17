@@ -55,10 +55,6 @@ nav ul {
   list-style: none;
   justify-content: center
 }
-nav ul li a:hover{
-  color: blue;
-  cursor: pointer;
-}
 
 h1 {
   background-color: lightgrey;
@@ -255,7 +251,6 @@ a { list-style: none;
   color: #070809;
 text-decoration: none;
 }
-
 
 /*
 .form {
