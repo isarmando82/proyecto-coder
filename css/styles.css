@@ -214,6 +214,50 @@ footer .social {
   font-size: 50px;
 } 
 
+.get-in-touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+
+}
+.get-in-touch .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3.2em;
+  line-height: 48px;
+  padding-bottom: 48px;
+     color: #5543ca;
+    background: #5543ca;
+    background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+    background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+    background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+a { list-style: none;
+  text-decoration: none;
+
+}
+.header {
+  color: #16406a;
+  font-size: 27px;
+  padding: 25px;
+  background-color: #bebaba8f;
+  margin: 20px;
+  width: 400px ;
+  list-style: none
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #070809;
+text-decoration: none;
+}
+
+
+/*
 .form {
   font-family: 'Inter Tight', sans-serif;
   font-size: 20px;   
@@ -230,6 +274,8 @@ footer .social {
 input:focus { 
   background-color: rgb(223, 149, 149);
 }
+
+
 .marco2 {
   padding: 40px;
   margin: 25px;
@@ -239,10 +285,13 @@ input:focus {
   font-size: 14px;
   font-weight: bold;  
 }
+*/
+
+
 .terminosTexto {
   font-size: 24px;  
   padding: 40px;
-  margin: 25px;
+  margin: 20px;
   text-indent: 50px;
 }
 .terminosTexto p:first-child::first-letter {
@@ -250,9 +299,11 @@ input:focus {
   font-size: 50px; 
 }
 .terminos {
-  padding: 40px;
+  padding: 20px;
   margin: 40px;
 }
+
+/* transiciones y animaciones*/
 
 .slide-in-elliptic-top-fwd {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -358,6 +409,9 @@ input:focus {
 	-webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+/* media queries* breakpointes 768px y 576px*/
+
 @media (max-width: 768px) {
 
   .containerGrid {
