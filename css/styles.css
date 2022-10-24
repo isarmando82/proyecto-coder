@@ -223,7 +223,7 @@ footer .social {
   font-size: 3.2em;
   line-height: 48px;
   padding-bottom: 48px;
-     color: #5543ca;
+    color: #5543ca;
     background: #5543ca;
     background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
     background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
@@ -405,23 +405,12 @@ input:focus {
 	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/* media queries* breakpointes 768px y 576px*/
+/* media queries* breakpointes */
 
 @media (max-width: 1200px) {
-
-  .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.15fr 1fr 1fr 0.10fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-  }
+ 
   
   header {
-    grid-area: header;
     height: 200px;
 
   }   
@@ -437,16 +426,12 @@ input:focus {
     font-size: 18px;
   }
   h2 { 
-      text-align: center;
-      font-family: 'Raleway', sans-serif;
+    
       font-size: 20px;
       padding: 10px;
-      font-weight: bolder;
-      border: 4px;
       margin-left: 40px;
       margin-right: 40px;
       margin-top: 40px;
-      background-color:  #eae5ee; 
   } 
   
   .doble {
@@ -456,8 +441,6 @@ input:focus {
 
   .Noticia {
     padding: 1px;
-    display: grid;
-    grid-template-columns: 30% 70%;
     grid-template-rows: 4fr;
     grid-template-areas: 
     "imagen noticiaTitle"
@@ -481,389 +464,53 @@ input:focus {
     justify-content:space-around;}
   .card {
     height: 300px;
-    padding: 50px;
-    padding-left: 75px;
-    border: 2px;
     margin: 50px;
   }
   .cardImagen {
     height: 100px;
     width: 100px;
-    position: relative;
-    padding: 7px;
-    border: 3px;
-    border-radius: 75%; 
   }
   .cardTexto {
-    padding: 5px;
-    border: 1px;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
   }
   .cardPrecio {
-    font-weight: bolder;
-    font-size: 16px;
     padding: 8px;  
   }
   .cardButton {
     padding-left: 100px;
   }
+
   footer {
     background-image: url(../assets/imgs/bottom4.png);
-
   } 
   footer section ul {
-  font-size: 14px;
-  } 
-  footer .social {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start  ;
-    justify-content: flex-start ;
-    gap: 50px;
-    margin-left: 35px;
-    padding: 36px;
-  }
-  }
-
-  @media (max-width: 992px) {
-
-    .containerGrid {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 0.15fr 1fr 1fr 0.10fr;
-      grid-template-areas: 
-      "header header header"
-      "main main main"
-      "main main main"
-      "main main main"
-      "footer footer footer";
-    }
-    
-    header {
-      grid-area: header;
-      height: 200px;
-  
-    }   
-   
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 15px;
-    }  
-      
-    h1 {
-      font-size: 18px;
-    }
-    h2 { 
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        padding: 10px;
-        font-weight: bolder;
-        border: 4px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
-        background-color:  #eae5ee; 
-    } 
-    
-    .doble {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr; 
-    }
-  
-    .Noticia {
-      padding: 1px;
-      display: grid;
-      grid-template-columns: 30% 70%;
-      grid-template-rows: 4fr;
-      grid-template-areas: 
-      "imagen noticiaTitle"
-      "textoNoticia textoNoticia"
-      "textoNoticia2 textoNoticia2"
-      }
-  
-    .noticiaTitle {
-      padding-right: 50px;
-    }
-    .textoNoticia2 {
-    grid-area: textoNoticia2;
-    padding: 5px;
-    font-size: 22px;
-    text-indent: 41px;
-    line-height: normal;
-  
-  }
-  
-    .cardx {
-      justify-content:space-around;}
-    .card {
-      height: 300px;
-      padding: 50px;
-      padding-left: 75px;
-      border: 2px;
-      margin: 50px;
-    }
-    .cardImagen {
-      height: 100px;
-      width: 100px;
-      position: relative;
-      padding: 7px;
-      border: 3px;
-      border-radius: 75%; 
-    }
-    .cardTexto {
-      padding: 5px;
-      border: 1px;
-      font-size: 16px;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bold;
-    }
-    .cardPrecio {
-      font-weight: bolder;
-      font-size: 16px;
-      padding: 8px;  
-    }
-    .cardButton {
-      padding-left: 100px;
-    }
-    footer {
-      background-image: url(../assets/imgs/bottom5.png);
-  
-    } 
-    footer section ul {
     font-size: 14px;
     } 
     footer .social {
-      display: flex;
-      flex-direction: row;
       align-content: flex-start  ;
       justify-content: flex-start ;
       gap: 50px;
       margin-left: 35px;
-      padding: 36px;
-    }
-    }
-  
+  }
+}
+
+  @media (max-width: 992px) {
+
+    footer {
+      background-image: url(../assets/imgs/bottom5.png);
 
 @media (max-width: 768px) {
 
-  .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.15fr 1fr 1fr 0.10fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-  }
   
-  header {
-    grid-area: header;
-    height: 200px;
-
-  }   
- 
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 15px;
-  }  
-    
-  h1 {
-    font-size: 18px;
-  }
-  h2 { 
-      text-align: center;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      padding: 10px;
-      font-weight: bolder;
-      border: 4px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-top: 40px;
-      background-color:  #eae5ee; 
-  } 
-  
-  .doble {
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr; 
-  }
-
-  .Noticia {
-    padding: 1px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 4fr;
-    grid-template-areas: 
-    "imagen noticiaTitle"
-    "textoNoticia textoNoticia"
-    "textoNoticia2 textoNoticia2"
-    }
-
-  .noticiaTitle {
-    padding-right: 50px;
-  }
-  .textoNoticia2 {
-  grid-area: textoNoticia2;
-  padding: 5px;
-  font-size: 22px;
-  text-indent: 41px;
-  line-height: normal;
-
-}
-
-  .cardx {
-    justify-content:space-around;}
-  .card {
-    height: 300px;
-    padding: 50px;
-    padding-left: 75px;
-    border: 2px;
-    margin: 50px;
-  }
-  .cardImagen {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    padding: 7px;
-    border: 3px;
-    border-radius: 75%; 
-  }
-  .cardTexto {
-    padding: 5px;
-    border: 1px;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-  }
-  .cardPrecio {
-    font-weight: bolder;
-    font-size: 16px;
-    padding: 8px;  
-  }
-  .cardButton {
-    padding-left: 100px;
-  }
   footer {
     background-image: url(../assets/imgs/bottom3.png);
   } 
-  footer section ul {
-  font-size: 14px;
-  } 
-  footer .social {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start  ;
-    justify-content: flex-start ;
-    gap: 50px;
-    margin-left: 35px;
-    padding: 36px;
-  }
-  }
+}
 
 @media (max-width:576px) {
 
-  .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.27fr 0.90fr 1fr 1fr 0.10fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-  }
-  
-  header {
-    grid-area: header;
-    height: 230px;
-    font-size: 16px;}
-  
-  .nav{
-    font-size: 14px;
-    font-weight: bold;
-  }  
-
-  h1 {
-    font-size: 18px;
-  }
-  h2 { 
-      text-align: center;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      padding: 10px;
-      font-weight: bolder;
-      border: 4px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-top: 110px;
-      background-color:  #eae5ee; 
-  } 
-  
-  .doble {
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr; 
-  }
-  .imagenNoticia {
-    height: 200px;
-    width: 200px;
-  }
-  .noticiaTitle {
-    padding-right: 40px;
-  }
-  .cardx {
-    justify-content:space-around;}
-  .card {
-    height: 300px;
-    padding: 50px;
-    padding-left: 75px;
-    border: 2px;
-    margin: 50px;
-  }
-  .cardImagen {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    padding: 7px;
-    border: 3px;
-    border-radius: 75%; 
-  }
-  .cardTexto {
-    padding: 5px;
-    border: 1px;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-  }
-  .cardPrecio {
-    font-weight: bolder;
-    font-size: 16px;
-    padding: 8px;  
-  }
-  .cardButton {
-    padding-left: 100px;
-  }
   footer {
     background-image: url(../assets/imgs/bottom2.png);
-  } 
-  footer section ul {
-  font-size: 14px;
-  } 
-  footer .social {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start  ;
-    justify-content: flex-start ;
-    gap: 50px;
-    margin-left: 35px;
-    padding: 36px;
-  }
-  
+  }  
 }
 
