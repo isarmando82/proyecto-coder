@@ -25,16 +25,9 @@ body {
   "footer footer footer footer";
 }
 
-header {
-  grid-area: header;
-  font-family: sans-serif;
-  display: flex;
-  height: 110px;
-  padding-left: 40px;
+.bg-coral {
   background-color: bisque;
-  justify-content: space-between;
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: bold;
+
 }
 
 main {
@@ -43,7 +36,9 @@ main {
 
 a {
   text-decoration: none;
-  color:black
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-right: 20px;
 }
 
 nav ul {
@@ -79,13 +74,13 @@ h2 {
 .doble {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
 }
 .Noticia {
   padding: 30px;
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   grid-template-areas: 
   "imagen noticiaTitle"
   "textoNoticia textoNoticia"
@@ -102,13 +97,13 @@ h2 {
   font-size: 22px;
   font-weight: bold;
   padding: 25px;
-  padding-top: 150px;
+  padding-top: 100px;
   text-align: justify;
   justify-content: center;
 
 }
-.noticiaTitle::before {
-  content: "ULTIMO MOMENTO: ";
+.noticiaTitle::after {
+  content: " ULTIMO MOMENTO!";
   color: blue
 }
 .noticiaTitle2 {
@@ -417,100 +412,292 @@ input:focus {
 
 @media (max-width: 1200px) {
  
-  
-  header {
-    height: 200px;
-
-  }   
- 
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 15px;
-  }  
-    
-  h1 {
-    font-size: 18px;
+  .containerGrid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.14fr 1fr 1fr 1fr 0.10fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
   }
-  h2 { 
-    
-      font-size: 20px;
-      padding: 10px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-top: 40px;
-  } 
+  
+  .hea {
+    grid-area: header;
+    font-family: sans-serif;
+    display: flex;
+    height: 150px;
+    padding-left: 40px;
+    background-color: bisque;
+    justify-content: space-between;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: bold; 
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color:black;
+    list-style: none;
+  }
+  
+  nav { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style: none;
+    font-style: none;
+    color:#000000;
+    text
+  }
+  
+  .h1 {
+    background-color: lightgrey;
+    padding: 20px;
+    padding-left: 40px;
+    font-weight: lighter;
+  }
+  
+  .hl2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    border: 4px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+    background-color:  #eae5ee; 
+  }
   
   .doble {
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
   }
 
   .Noticia {
-    padding: 1px;
-    grid-template-rows: 4fr;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "imagen noticiaTitle"
-    "textoNoticia textoNoticia"
-    "textoNoticia2 textoNoticia2"
+    "imagen" "noticiaTitle"
+    "textoNoticia" "textoNoticia"
+    ;  
+  }
+  
+  .imagenNoticia {
+    grid-area: imagen;
+
+
+  .noticiaTitle{  
+    grid-area: noticiatitle;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 50px;
+    padding-top: 110px;
+    text-align: justify;
+    justify-content: center;
     }
 
-  .noticiaTitle {
-    padding-right: 50px;
+  .noticiaTitle2 {
+    grid-area: noticiaTitle;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 50px;
+    text-align: left;    
+    align-self: center;
+   
   }
-  .textoNoticia2 {
-  grid-area: textoNoticia2;
-  padding: 5px;
-  font-size: 22px;
-  text-indent: 41px;
-  line-height: normal;
+  .textoNoticia {
+    grid-area: textoNoticia;
+    padding: 25px;
+    font-size: 22px;
+    text-indent: 41px;
+    text-align: justify;
+    align-self: center;
   }
-
-
-  .card {
-    justify-content:space-evenly;}
-  .card {
-    height: 300px;
-    margin: 50px;
-    padding-bottom: 100px;
+  
+  .cardx {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    
+  }
+  
+  .cardz {
+    height: 50px;
+    padding: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 300px;
+    border: 50px;
+    margin: 60px;
+    background-image: linear-gradient(to left top, #837d81, #989398, #adaaaf, #c2c1c7, #d8d9df, #cccdd2, #c0c0c5, #b4b4b8, #858386, #575657, #2d2d2d, #000000);
+    border-radius: 10%;   
+  }
+  .cardz:hover {
+    transform: scale(1.2)
   }
   .cardImagen {
-    height: 100px;
-    width: 100px;
+    position: relative;
+    padding: 7px;
+    border: 3px;
+    border-radius: 75%; 
   }
   .cardTexto {
-    font-size: 16px;
+    padding: 5px;
+    border: 1px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
   }
   .cardPrecio {
-    padding: 8px;  
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px;  
   }
   .cardButton {
-    padding-left: 100px;
+    padding-left: 110px;
   }
-
+  .cardButton img {
+    border-radius: 40%;
+  }
+  
   footer {
-    background-image: url(../assets/imgs/bottom4.png);
+    grid-area: footer;
+    background-image: url(../assets/imgs/bottom.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex
   } 
   footer section ul {
-    font-size: 14px;
-    } 
-    footer .social {
-      align-content: flex-start  ;
-      justify-content: flex-start ;
-      gap: 50px;
-      margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    text-align: left  ;
+    padding: 28px;
+    list-style: none;
+    line-height: 30px;
+    text-decoration: none;
+    color:beige
+  } 
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
+    margin-left: 250px;
+    padding: 36px;
   }
-}
+  
+  .textoNoticia2 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  
+  .quienesSomos {
+    font-size: 26px;
+    padding: 40px;
+    text-align: center;
+  }
+  .quienesSomos p::first-letter {
+    color: rgb(85, 126, 195);
+    font-size: 50px;
+  } 
 
   @media (max-width: 992px) {
+    
+    .containerGrid{
+      display: grid;
+      height: 100%;
+      width: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 0.15fr 1fr 1fr 1fr 0.10fr;
+      grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+    }
+    
+    .head {
+      grid-area: header;
+      font-family: sans-serif;
+      display: flex;
+      height: 200px;
+      padding-left: 40px;
+      background-color: bisque;
+      justify-content: column;
+      font-family: 'Inter Tight', sans-serif;
+      font-weight: bold; 
+    }
+    
+    main {
+      grid-area: main;
+    }
+    
+    .logo {
+      text-decoration: none;
+      color:black;
+      list-style: none;
+    }
+    
+    nav { 
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      list-style: none;
+      font-style: none;
+      color:#000000;
+      text
+    }
+    
+    .h1 {
+      background-color: lightgrey;
+      padding: 20px;
+      padding-left: 40px;
+      font-weight: lighter;
+    }
+    
+    .hl2 {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      padding: 20px;
+      font-weight: bolder;
+      border: 4px;
+      margin-left: 400px;
+      margin-right: 400px;
+      margin-top: 100px;
+      background-color:  #eae5ee; 
+    }
+    
+
+
 
 .card {
   padding-bottom: 100px;
 }
 
 
-  footer {
+footer {
     background-image: url(../assets/imgs/bottom5.png);
       
   }
@@ -518,7 +705,7 @@ input:focus {
 @media (max-width: 768px) {
 
   
-  footer {
+footer {
     background-image: url(../assets/imgs/bottom3.png);
   } 
 }
