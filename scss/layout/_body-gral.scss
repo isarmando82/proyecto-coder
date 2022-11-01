@@ -21,22 +21,19 @@ body {
   }
 
   h1 {
-    background-color: lightgrey;
-    padding: 20px;
-    padding-left: 40px;
-    font-weight: lighter;
+    @include haches ($color-h1, 20px, 40px, lighter); 
+
   }
   
   h2 {
+    @include haches ($color-h2, 20px, none, bolder);
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    padding: 20px;
-    font-weight: bolder;
+    font-size: $tamano-letra-h2 ;
     border: 4px;
     margin-left: 600px;
     margin-right: 600px;
     margin-top: 100px;
-    background-color:  #eae5ee; 
+   
   }
   

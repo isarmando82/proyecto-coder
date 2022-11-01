@@ -1,0 +1,6 @@
+@mixin haches ($bgc, $paddi, $paddil, $fwt) {
+    background-color: $bgc;
+    padding: $paddi;
+    padding-left: $paddil;
+    font-weight: $fwt;
+} 

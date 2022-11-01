@@ -39,16 +39,17 @@ h1 {
 }
 
 h2 {
+  background-color: #eae5ee;
+  padding: 20px;
+  padding-left: none;
+  font-weight: bolder;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  padding: 20px;
-  font-weight: bolder;
   border: 4px;
   margin-left: 600px;
   margin-right: 600px;
   margin-top: 100px;
-  background-color: #eae5ee;
 }
 
 a {
@@ -82,7 +83,7 @@ nav ul {
   grid-area: imagen;
 }
 
-.noticiaTitle {
+.noticiaTitle, .noticiaTitle2 {
   grid-area: noticiaTitle;
   font-size: 22px;
   font-weight: bold;
@@ -90,16 +91,12 @@ nav ul {
   padding-top: 100px;
 }
 
-.noticiaTitle::after {
+.noticiaTitle::after, .noticiaTitle2::after {
   content: "ULTIMO MOMENTO!";
   color: rgb(144, 36, 145);
 }
 
 .noticiaTitle2 {
-  grid-area: noticiaTitle;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 25px;
   text-align: left;
   align-self: center;
 }
@@ -122,7 +119,7 @@ nav ul {
 
 .cardz {
   height: 50px;
-  padding: 30px;
+  padding: 5px;
   padding-left: 1px;
   padding-right: 1px;
   padding-bottom: 300px;
@@ -139,13 +136,14 @@ nav ul {
 .cardImagen {
   position: relative;
   padding: 7px;
-  padding-left: 55px;
+  padding-left: 110px;
   border: 3px;
-  border-radius: 75%;
+  border-radius: 95%;
 }
 
 .cardTexto {
   padding: 5px;
+  padding-left: 40px;
   border: 1px;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -155,7 +153,7 @@ nav ul {
 .cardPrecio {
   font-weight: bolder;
   font-size: 16px;
-  padding: 10px;
+  padding-left: 40px;
 }
 
 .cardButton {
@@ -182,13 +180,17 @@ nav ul {
   font-size: 50px;
 }
 
+.logo-s {
+  width: 200px;
+}
+
 .header {
   color: #16406a;
   font-size: 27px;
-  padding: 25px;
+  padding: 20px;
   background-color: rgba(190, 186, 186, 0.5607843137);
   margin: 20px;
-  width: 400px;
+  width: 380px;
   list-style: none;
 }
 
@@ -373,7 +375,7 @@ nav ul {
   .imagenNoticia {
     grid-area: imagen;
   }
-  .noticiaTitle {
+  .noticiaTitle, .noticiaTitle2 {
     grid-area: noticiatitle;
     font-size: 22px;
     font-weight: bold;
@@ -488,7 +490,7 @@ nav ul {
     width: 25px;
     height: 25px;
   }
-  .noticiaTitle {
+  .noticiaTitle, .noticiaTitle2 {
     grid-area: noticiaTitle;
     font-size: 22px;
     font-weight: bold;
@@ -518,6 +520,30 @@ nav ul {
 
 .cardx {
   padding-left: 15px;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .containerGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header" "main" "main" "main" "footer";
+  }
+  header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "logo" "nav";
+  }
+  .cardx {
+    padding-left: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
