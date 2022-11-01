@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+  }
+
+  .containerGrid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.15fr 1fr 1fr 1fr 0.10fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  h1 {
+    background-color: lightgrey;
+    padding: 20px;
+    padding-left: 40px;
+    font-weight: lighter;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    padding: 20px;
+    font-weight: bolder;
+    border: 4px;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 100px;
+    background-color:  #eae5ee; 
+  }
+  

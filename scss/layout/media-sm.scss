@@ -1,0 +1,34 @@
+@media (max-width: 480px) {
+
+    body {
+      font-size: 14px;
+    }
+    
+    .containerGrid {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "header"
+      "main"
+      "main"
+      "main"
+      "footer" 
+      ;
+    }
+    
+    header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+    "logo"
+    "nav";
+    }
+    .cardx {
+      padding-left: 15px; 
+    } 
+    }

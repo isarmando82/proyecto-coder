@@ -1,0 +1,91 @@
+.Noticia {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imagen noticiaTitle"
+    "textoNoticia textoNoticia";  
+  }
+  .imagenNoticia {
+    padding: 20px;
+    grid-area: imagen;
+  }
+  .noticiaTitle {  
+    grid-area: noticiaTitle;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 25px;
+    padding-top: 100px;
+  }
+  .noticiaTitle::after {
+    content: "ULTIMO MOMENTO!";
+    color: rgb(144, 36, 145)
+  }
+  .noticiaTitle2 {
+    grid-area: noticiaTitle;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 25px;
+    text-align: left;
+    align-self: center;
+  }
+  .textoNoticia {
+    grid-area: textoNoticia;
+    padding: 25px;
+    font-size: 22px;
+    text-indent: 41px;
+    text-align: justify;
+    align-self: center;
+  }
+  
+  .cardx {
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+  }
+  .cardz {
+    height: 50px;
+    padding: 30px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 300px;
+    border: 15px;
+    margin: 15px;
+    background-image: linear-gradient(to left top, #837d81, #989398, #adaaaf, #c2c1c7, #d8d9df, #cccdd2, #c0c0c5, #b4b4b8, #858386, #575657, #2d2d2d, #000000);
+    border-radius: 10%;   
+  }
+  .cardz:hover {
+    transform: scale(1.2)
+  }
+  .cardImagen {
+    position: relative;
+    padding: 7px;
+    padding-left: 55px;
+    border: 3px;
+    border-radius: 75%; 
+  }
+  .cardTexto {
+    padding: 5px;
+    border: 1px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  .cardPrecio {
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px;  
+  }
+  .cardButton {
+    padding-left: 110px;
+  }
+  .cardButton img {
+    border-radius: 40%;
+  }
+  
+  .textoNoticia2 {
+    font-size: 22px;
+    line-height: 35px;
+  }

@@ -1,0 +1,42 @@
+@media (max-width:576px) {
+
+ 
+
+  
+    .imagenNoticia {
+      padding: 10px;
+      grid-area: imagen;
+      width: 25px;
+      height: 25px;
+    }
+    .noticiaTitle {  
+      grid-area: noticiaTitle;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 25px;
+      padding-top: 150px;
+      text-align: justify;
+      justify-content: center;
+    
+    }
+  
+    }
+    .noticiaTitle2 {
+      grid-area: noticiaTitle;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 25px;
+      text-align: left;
+      align-self: center;
+    }
+    .textoNoticia {
+      grid-area: textoNoticia;
+      padding: 25px;
+      font-size: 22px;
+      text-indent: 41px;
+      text-align: justify;
+      align-self: center;
+    }
+    .cardx {
+      padding-left: 15px;}
+    

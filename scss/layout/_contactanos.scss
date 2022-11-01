@@ -1,0 +1,32 @@
+
+  .header {
+    color: #16406a;
+    font-size: 27px;
+    padding: 25px;
+    background-color: #bebaba8f;
+    margin: 20px;
+    width: 400px ;
+    list-style: none
+  }
+  
+  .bigicon {
+    font-size: 35px;
+    color: #070809;
+  text-decoration: none;
+  }
+  
+  
+  .terminosTexto {
+    font-size: 24px;  
+    padding: 40px;
+    margin: 20px;
+    text-indent: 50px;
+  }
+  .terminosTexto p:first-child::first-letter {
+    color: rgb(47, 22, 139);
+    font-size: 50px; 
+  }
+  .terminos {
+    padding: 20px;
+    margin: 40px;
+  }
