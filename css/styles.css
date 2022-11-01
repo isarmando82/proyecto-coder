@@ -92,7 +92,7 @@ nav ul {
 }
 
 .noticiaTitle::after, .noticiaTitle2::after {
-  content: "ULTIMO MOMENTO!";
+  content: "ULTIMA GENERACION!";
   color: rgb(144, 36, 145);
 }
 
