@@ -1,22 +1,24 @@
 .Noticia {
     padding: 15px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "imagen noticiaTitle"
-    "textoNoticia textoNoticia";  
+    "imagen" 
+    "noticiaTitle"
+    "textoNoticia";  
   }
   .imagenNoticia {
-    padding: 20px;
+    padding: 10px;
     grid-area: imagen;
+
   }
   .noticiaTitle {  
     grid-area: noticiaTitle;
     font-size: 22px;
     font-weight: bold;
     padding: 25px;
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .noticiaTitle::after {
     content: "ULTIMA GENERACION!";
@@ -48,20 +50,22 @@
     padding-left: 1px;
     padding-right: 1px;
     padding-bottom: 300px;
+    margin-bottom: 100px;
     border: 15px;
-    margin: 15px;
+    margin: 50px;
     background-image: linear-gradient(to left top, #837d81, #989398, #adaaaf, #c2c1c7, #d8d9df, #cccdd2, #c0c0c5, #b4b4b8, #858386, #575657, #2d2d2d, #000000);
-    border-radius: 10%;   
+    border-radius: 10%;  
+    border: #000000 solid; 
   }
   .cardz:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
   }
   .cardImagen {
     position: relative;
     padding: 7px;
-    padding-left: 110px;
-    border: 3px;
-    border-radius: 95%; 
+    margin-left: 30px;
+    border-radius: 25%;
+
   }
   .cardTexto {
     padding: 5px;
@@ -78,9 +82,11 @@
   }
   .cardButton {
     padding-left: 110px;
+  
   }
   .cardButton img {
     border-radius: 40%;
+    
   }
   
   .textoNoticia2 {

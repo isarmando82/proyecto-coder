@@ -53,11 +53,12 @@
     .Noticia {
       padding: 30px;
       display: grid;
-      grid-template-columns: 2fr;
+      grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-template-areas: 
-      "imagen" "noticiaTitle"
-      "textoNoticia" "textoNoticia"
+      "imagen" 
+      "noticiaTitle"
+      "textoNoticia"
       ;  
     }
     .imagenNoticia {
@@ -106,7 +107,7 @@
       position: relative;
       padding: 7px;
       border: 3px;
-      border-radius: 75%; 
+      border-radius: 10%; 
     }
     .cardTexto {
       padding: 5px;
@@ -122,9 +123,13 @@
     }
     .cardButton {
       padding-left: 110px;
+      border-color: black;
+      border-style: solid;
+      border: 3px;
     }
     .cardButton img {
       border-radius: 40%;
+     
     }
     
     .textoNoticia2 {

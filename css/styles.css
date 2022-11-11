@@ -73,13 +73,13 @@ nav ul {
 .Noticia {
   padding: 15px;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "imagen noticiaTitle" "textoNoticia textoNoticia";
+  grid-template-areas: "imagen" "noticiaTitle" "textoNoticia";
 }
 
 .imagenNoticia {
-  padding: 20px;
+  padding: 10px;
   grid-area: imagen;
 }
 
@@ -88,7 +88,7 @@ nav ul {
   font-size: 22px;
   font-weight: bold;
   padding: 25px;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .noticiaTitle::after, .noticiaTitle2::after {
@@ -123,22 +123,23 @@ nav ul {
   padding-left: 1px;
   padding-right: 1px;
   padding-bottom: 300px;
+  margin-bottom: 100px;
   border: 15px;
-  margin: 15px;
+  margin: 50px;
   background-image: linear-gradient(to left top, #837d81, #989398, #adaaaf, #c2c1c7, #d8d9df, #cccdd2, #c0c0c5, #b4b4b8, #858386, #575657, #2d2d2d, #000000);
   border-radius: 10%;
+  border: #000000 solid;
 }
 
 .cardz:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .cardImagen {
   position: relative;
   padding: 7px;
-  padding-left: 110px;
-  border: 3px;
-  border-radius: 95%;
+  margin-left: 30px;
+  border-radius: 25%;
 }
 
 .cardTexto {
@@ -186,11 +187,11 @@ nav ul {
 
 .header {
   color: #16406a;
-  font-size: 27px;
-  padding: 20px;
-  background-color: rgba(190, 186, 186, 0.5607843137);
-  margin: 20px;
-  width: 380px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgba(114, 102, 102, 0.5607843137);
+  margin: 5px;
+  width: 250px;
   list-style: none;
 }
 
@@ -368,9 +369,9 @@ nav ul {
   .Noticia {
     padding: 30px;
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "imagen" "noticiaTitle" "textoNoticia" "textoNoticia";
+    grid-template-areas: "imagen" "noticiaTitle" "textoNoticia";
   }
   .imagenNoticia {
     grid-area: imagen;
@@ -416,7 +417,7 @@ nav ul {
     position: relative;
     padding: 7px;
     border: 3px;
-    border-radius: 75%;
+    border-radius: 10%;
   }
   .cardTexto {
     padding: 5px;
@@ -432,6 +433,9 @@ nav ul {
   }
   .cardButton {
     padding-left: 110px;
+    border-color: black;
+    border-style: solid;
+    border: 3px;
   }
   .cardButton img {
     border-radius: 40%;
