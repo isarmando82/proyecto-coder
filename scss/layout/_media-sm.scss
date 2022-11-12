@@ -1,35 +1,44 @@
 @media (max-width: 480px) {
-
-  body {
-    font-size: 14px;
-  }
-  
-  .containerGrid {
+  .containerGrid{
     display: grid;
     height: 100%;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 1fr;
     grid-template-areas: 
     "header"
     "main"
     "main"
     "main"
-    "footer" 
-    ;
+    "footer";
+  }
+
+ 
+  h1 {
+    margin-top: -1000px 
+
   }
   
-  header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.25fr 0.25fr;
-  grid-template-areas:
-  "logo"
-  "nav";
+  h2 {
+    @include haches ($color-h2, 20px, none, bolder);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: $tamano-letra-h2 ;
+    border: none;
+    margin-left: none;
+    margin-right: none;
+    margin-top: none;
+   
   }
-  .cardx {
-    padding-left: none;
-    padding-right: none; 
-  } 
-  }
+
+  .hl2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: bolder;
+    border: 4px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 0px;
+    background-color:  #eae5ee; 
