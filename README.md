@@ -8,8 +8,9 @@ Se utiliza Grids y Flex, con uso de pseudoclases y pseudoelementos.
 Se insertan gradientes, transformaciones, transiciones y animaciones.
 Se aplica bootstrap a diversos elementos como el header, footer y otros,
 que junto a los break-points hacen a las paginas responsive.
-En orden de la tercer entrega se aplica SASS con parcials, variables, 
-mixins y extends. Se inserta meta y se extructutan textos y titulos
-para mejorar el SEO.
+Se aplica SASS con parcials, variables, 
+mixins y extends. Se inserta meta y se extructutan textos y titulos para mejorar el SEO.
+En orden a la entrega del proyecto se corrigen las
+observaciones, se limpia el codigo y se busca optimizarlo.
 
 Ismael Armando.
